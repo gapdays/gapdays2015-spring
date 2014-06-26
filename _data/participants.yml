@@ -1,0 +1,101 @@
+- name: Benjamin Assarf
+  affiliation: TU Berlin
+
+- name: Mohamed Barakat
+  affiliation: KU Eichstätt-Ingolstadt
+  talk: homalg project
+
+- name: Reimer Behrends
+  affiliation: TU Kaiserslautern
+  talk: "HPC-GAP: Design and Implementation of a Concurrency Model for GAP"
+  slides: GAP_Days_2014_Reimer_Behrends.pdf
+
+- name: Martin Bies
+  affiliation: ITP Heidelberg
+  talk: String theory, sheaf cohomology and the homalg package
+  slides: GAP_Days_2014_Martin_Bies.pdf
+
+- name: Thomas Breuer
+  affiliation: RWTH Aachen University
+  talk: GAP packages AtlasRep, CTblLib, CTBlocks, MFER
+
+- name: Manuel Delgado
+  affiliation: University of Porto
+  talk: GAP package intpic
+  slides: GAP_Days_2014_mdelgado.pdf
+
+- name: Pedro A. García-Sánchez
+  affiliation: Universidad de Granada
+  slides: GAP_Days_2014-pedro-gs.pdf
+
+- name: Sebastian Gutsche
+  affiliation: TU Kaiserslautern
+  talk: GAP packages AutoDoc, ToolsForHomalg,  CategoriesForHomalg
+  slides: GAP_Days_2014_Gutsche_Posur.pdf
+
+- name: Johannes Hahn
+  affiliation: FSU Jena
+  talk: GAP code for Coxeter groups and Kazhdan-Lusztig theory
+  slides: GAP_Days_2014_Johannes_Hahn.pdf
+
+- name: Max Horn
+  affiliation: JLU Gießen
+  talk: GAP package libsing
+  slides: GAP_Days_2014_Max_Horn.pdf
+
+- name: Christopher Jefferson
+  affiliation: University of St Andrews
+  talk: Ferret - A modern C++ rewrite of Partition Backtracking in GAP
+
+- name: Delaram Kahrobaei
+  affiliation: City University of New York
+
+- name: Stefan Kohl
+
+- name: Alexander Konovalov
+  affiliation: University of St Andrews
+  talk: continuous integration, package update mechanism and release management in GAP
+  slides: GAP_Days_2014_Konovalov.pdf
+
+- name: Lukas Kühne
+  affiliation: TU Kaiserslautern
+
+- name: Samuel Lelièvre
+  affiliation: Université Paris-Sud
+
+- name: Steve Linton
+  affiliation: University of St Andrews
+
+- name: Benjamin Lorenz
+  affiliation: TU Berlin
+
+- name: Frank Lübeck
+  affiliation: RWTH Aachen University
+
+- name: Hebert Pérez-Rosés
+  affiliation: University of Lleida
+  talk: Graph construction via voltage assignment with GAP
+  slides: GAP_Days_2014_Hebert_Perez-Roses.pdf
+
+- name: Markus Pfeiffer
+  affiliation: University of St Andrews
+  talk: "(HPC)GAP infrastructure packages in the making: GAPData and Matrix"
+
+- name: Sebastian Posur
+  affiliation: RWTH Aachen University
+  talk: CategoriesForHomalg
+  slides: GAP_Days_2014_Gutsche_Posur.pdf
+
+- name: Hans Schoenemann
+  affiliation: TU Kaiserslautern
+
+- name: Christof Söger
+  affiliation: Universität Osnabrück
+  talk: GAP package NormalizInterface
+  slides: GAP_Days_2014_Christof_Soeger.pdf
+  demo: GAP_Days_2014_Christof_Soeger.g
+
+- name: VInay Wagh
+  affiliation: IIT Guwahati, India
+  talk: GAP package LessGenerators and the Quillen-Suslin algorithm
+  slides: GAP_Days_2014_VInay_Wagh.pdf

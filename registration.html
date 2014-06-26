@@ -1,0 +1,135 @@
+---
+layout: page
+title: Registration
+---
+
+
+<p class="message">
+  Registration is closed.
+</p>
+
+{% comment %}
+<p>
+You can use this form to register for the GAP Days 2014.
+Alternatively, you can register by writing an email to
+<a href="mailto:gapdays2014@coxeter.de">gapdays2014@coxeter.de</a>
+with the information we ask for below.
+</p>
+
+<p>
+If you any questions
+regarding registration or the conference, feel free to
+<a href="mailto:gapdays2014@coxeter.de">contact us via email</a>.
+</p>
+<form action="http://getsimpleform.com/messages?form_api_token=179c82620dd5f6dbf50841a091845f48" method="post">
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="name">Name <span class="form-field-req">*</span></label>
+  </div>
+  <input type="text" size="60" maxlength="80" name="name" autofocus required />
+  <!-- autofocus with fallback for older browsers -->
+  <script>
+    if (!("autofocus" in document.createElement("input"))) {
+      document.getElementById("q").focus();
+    }
+  </script>
+</div>
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="email">Email <span class="form-field-req">*</span></label>
+  </div>
+  <input type="email" size="60" maxlength="80" name="email" required />
+</div>
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="affiliation">Affiliation</label>
+  </div>
+  <div class="form-field-description">
+    Please enter the name of your home university, institute etc., if any. 
+  </div>
+  <input type="text" size="60" maxlength="80" name="affiliation" />
+</div>
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="arrival_date">Arrival date <span class="form-field-req">*</span></label> 
+  </div>
+  <div class="form-field-description">
+    Please select the first day you will attend the conference.
+  </div>
+  <select name="arrival.date" id="arrival_date" required>
+    <option value="Sunday, August 24, or before" selected="selected">Sunday, August 24, or before</option>
+    <option value="Monday, August 25" selected="selected">Monday, August 25</option>
+    <option value="Tuesday, August 26">Tuesday, August 26</option>
+    <option value="Wednesday, August 27">Wednesday, August 27</option>
+    <option value="Thursday, August 28">Thursday, August 28</option>
+    <option value="Friday, August 29">Friday, August 29</option>
+  </select>
+</div>
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="departure_date">Departure date <span class="form-field-req">*</span></label> 
+  </div>
+  <div class="form-field-description">
+    Please select the last day you will attend the conference.
+  </div>
+  <select name="departure.date" id="departure_date" required>
+    <option value="Monday, August 25">Monday, August 25</option>
+    <option value="Tuesday, August 26">Tuesday, August 26</option>
+    <option value="Wednesday, August 27">Wednesday, August 27</option>
+    <option value="Thursday, August 28">Thursday, August 28</option>
+    <option value="Friday, August 29" selected="selected">Friday, August 29</option>
+    <option value="Saturday, August 30, or later">Saturday, August 30, or later</option>
+  </select>
+</div>
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="funding">Funding?</label>
+  </div>
+  <div class="form-field-description">
+    We have some limited funding available to cover travel and hotel expenses.
+    If you need support in order to attend the workshop, please let us know an
+    estimate of your expected travel and/or accommodation expenses by
+    registering <strong>before the 1st of August</strong>. We may be able to
+    cover up to 500 Euros, however, the final amount will also depend on how
+    many requests for support we receive.
+  </div>
+  <input type="text" size="60" maxlength="180" name="funding" />
+</div>
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="presentation">Presentation?</label>
+  </div>
+  <div class="form-field-description">
+    Would you like to give a short presentation (about 20 minutes) of a GAP
+    package or GAP related research? If this is the case, please briefly tell
+    us what you would like to talk about.
+  </div>
+  <textarea name="presentation" rows="10" cols="60"></textarea>
+</div>
+
+
+<div class="form-field">
+  <div class="form-field-title">
+    <label for="presentation">Comments</label>
+  </div>
+  <div class="form-field-description">
+    If you have any comments, questions or suggestions, please enter them here.
+  </div>
+  <textarea name="comments" rows="10" cols="60"></textarea>
+</div>
+
+<input type='hidden' name='redirect_to' value='{{ site.url }}thank-you' />
+
+<div class="form-field">
+  <input type="submit" value="Register!" />
+</div>
+
+</form>
+{% endcomment %}
