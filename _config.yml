@@ -6,26 +6,14 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            'GAP Days 2014'
+title:            'GAP Days 2015, Spring'
 tagline:          'A workshop for GAP developers and users'
 #description:      'A workshop for <a href="http://www.gap-system.org/">GAP</a> developers and users.'
 #description:      'A workshop for <a href="http://www.gap-system.org/">GAP</a> developers and users, August 25-29, 2014, RWTH Aachen University.'
-description:      'August 25-29, 2014'
-url:              http://gapdays2014.coxeter.de/
+description:      'March 16-20, 2015'
+url:              http://gapdays.coxeter.de/
 baseurl:          /
 
-#author:
-#  name:           'Mark Otto'
-#  url:            https://twitter.com/mdo
-#
-# paginate:         5
-#
-# Custom vars
-#version:          2.1.0
-#
-#github:
-#  repo:           https://github.com/fingolfin/gapdays2014
 
-
-exclude: [ "gapday2014-program.*", "misc" ]
-include: [ "gapday2014-program.pdf" ]
+exclude: [ "gapday2015-program.*", "misc" ]
+include: [ "gapday2015-program.pdf" ]
