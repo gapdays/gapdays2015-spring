@@ -7,9 +7,9 @@ title: Home
 ## March 16-20, 2015, RWTH Aachen University
 
 This meeting is a developer's meeting which will focus on stabilizing HPC-GAP.
-Our goal is to make a beta-release of HPC-GAP with improved documentation
+Our goal is to work towards a beta-release of HPC-GAP with improved documentation
 which helps package authors to gradually port their packages.
-
+Futhermore we want to work out a roadmap for reintegrating HPC-GAP into the main development line.
 
 #### GAP Days in general
 
