@@ -14,5 +14,5 @@ url:              http://gapdays.coxeter.de/
 baseurl:          /
 
 
-exclude: [ "gapday2015-program.*", "misc" ]
+exclude: [ "program.aux", "program.log", "program.out", "program.tex", "misc" ]
 include: [ "gapday2015-program.pdf" ]
