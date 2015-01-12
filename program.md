@@ -3,17 +3,23 @@ layout: page
 title: Program
 ---
 
-* [Schedule and abstracts as PDF](/gapday2014-program.pdf)
-  * Begin of coding sessions: August 25, 10:00
-  * Welcoming session and first talks: August 25, 14:00
+The focus of the GAP Days 2015 will be on [HPC-GAP](http://www-circa.mcs.st-and.ac.uk/hpcgap.php)
+and migrating GAP development to it. As such, 
+
+
+{% comment %}
+* [Schedule and abstracts as PDF](/program.pdf)
+  * Begin of coding sessions: Monday, March 16, 10:00
+  * Welcoming session and first talks: Monday, March 16, 14:00
   * Joint dinner: Wednesday, August 27, 19:00 in the "[Labyrinth](http://www.labyrinthaachen.de)"
-  * End: August 29, 16:00
+  * End: Friday, March 20, 16:00
 
 * For submitting issues (bugs, ideas for enhancements, etc.) in the GAP system, please use the
 [GAP issue tracker at BitBucket](https://bitbucket.org/gap-system/gap/issues).
 
 * Please also have a look at the [GAP Days 2014 wiki](https://github.com/gap-system/gapdays2014/wiki)
 for links to the issue tracker, our discussion on the future of GAP etc.
+
 
 ## Suggested discussion & coding topics:
 
@@ -50,3 +56,5 @@ for links to the issue tracker, our discussion on the future of GAP etc.
 	* Providing support and modern guidelines for package development
 	* Discuss possibility of a package manager?
 	* ...
+
+{% endcomment %}
