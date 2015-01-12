@@ -3,8 +3,6 @@ layout: page
 title: Participants
 ---
 
-[![Group photo](/photos/GAP_Days_2014_photo-thumb.jpg "Group photo")](/photos/GAP_Days_2014_photo.jpg)
-
 <ol>
 {% for p in site.data.participants %}
   <li>
@@ -20,7 +18,7 @@ title: Participants
 {% endfor %}
 </ol>
 
-Feedback
+{% if site.data.feedback.size > 0 %}
 
 <ul>
 {% for p in site.data.feedback %}
@@ -32,3 +30,5 @@ Feedback
   </li>
 {% endfor %}
 </ul>
+
+{% endif %}
