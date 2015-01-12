@@ -1,27 +1,34 @@
 ---
 layout: page
 title: Registration
+registration_open: yes
+form_api_token: 251c06938d6079b41363a752acd1598d
 ---
 
-
+{% if page.registration_open %}
+<p class="message">
+  Registration is open.
+</p>
+{% else %}
 <p class="message">
   Registration is closed.
 </p>
+{% endif %}
 
-{% comment %}
+{% if page.registration_open %}
 <p>
-You can use this form to register for the GAP Days 2014.
+You can use this form to register for the GAP Days.
 Alternatively, you can register by writing an email to
-<a href="mailto:gapdays2014@coxeter.de">gapdays2014@coxeter.de</a>
+<a href="mailto:gapdays@coxeter.de">gapdays@coxeter.de</a>
 with the information we ask for below.
 </p>
 
 <p>
 If you any questions
 regarding registration or the conference, feel free to
-<a href="mailto:gapdays2014@coxeter.de">contact us via email</a>.
+<a href="mailto:gapdays@coxeter.de">contact us via email</a>.
 </p>
-<form action="http://getsimpleform.com/messages?form_api_token=179c82620dd5f6dbf50841a091845f48" method="post">
+<form action="http://getsimpleform.com/messages?form_api_token={{page.form_api_token}}" method="post">
 
 <div class="form-field">
   <div class="form-field-title">
@@ -61,12 +68,12 @@ regarding registration or the conference, feel free to
     Please select the first day you will attend the conference.
   </div>
   <select name="arrival.date" id="arrival_date" required>
-    <option value="Sunday, August 24, or before" selected="selected">Sunday, August 24, or before</option>
-    <option value="Monday, August 25" selected="selected">Monday, August 25</option>
-    <option value="Tuesday, August 26">Tuesday, August 26</option>
-    <option value="Wednesday, August 27">Wednesday, August 27</option>
-    <option value="Thursday, August 28">Thursday, August 28</option>
-    <option value="Friday, August 29">Friday, August 29</option>
+    <option value="Sunday or before">Sunday or before</option>
+    <option value="Monday" selected="selected">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
   </select>
 </div>
 
@@ -78,12 +85,12 @@ regarding registration or the conference, feel free to
     Please select the last day you will attend the conference.
   </div>
   <select name="departure.date" id="departure_date" required>
-    <option value="Monday, August 25">Monday, August 25</option>
-    <option value="Tuesday, August 26">Tuesday, August 26</option>
-    <option value="Wednesday, August 27">Wednesday, August 27</option>
-    <option value="Thursday, August 28">Thursday, August 28</option>
-    <option value="Friday, August 29" selected="selected">Friday, August 29</option>
-    <option value="Saturday, August 30, or later">Saturday, August 30, or later</option>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday" selected="selected">Friday</option>
+    <option value="Saturday or later">Saturday or later</option>
   </select>
 </div>
 
@@ -114,7 +121,6 @@ regarding registration or the conference, feel free to
   <textarea name="presentation" rows="10" cols="60"></textarea>
 </div>
 
-
 <div class="form-field">
   <div class="form-field-title">
     <label for="presentation">Comments</label>
@@ -132,4 +138,4 @@ regarding registration or the conference, feel free to
 </div>
 
 </form>
-{% endcomment %}
+{% endif %}
