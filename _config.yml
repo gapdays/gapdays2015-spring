@@ -15,4 +15,4 @@ baseurl:          /gapdays2015-spring
 
 
 exclude: [ "program.aux", "program.log", "program.out", "program.tex", "misc" ]
-include: [ "gapday2015-program.pdf" ]
+include: [ "program.pdf" ]
