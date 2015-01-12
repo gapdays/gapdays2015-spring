@@ -1,4 +1,4 @@
-This is the website for the [GAP days 2014](http://gapdays2014.coxeter.de/).
+This is the website for the [GAP days](http://gapdays.coxeter.de/).
 
 It is based on [Jekyll](http://jekyllrb.com/), a static website generator,
 and the [hyde](https://github.com/poole/hyde/) template.
