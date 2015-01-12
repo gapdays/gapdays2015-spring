@@ -4,7 +4,7 @@ title: Program
 ---
 
 The focus of the GAP Days 2015 will be on [HPC-GAP](http://www-circa.mcs.st-and.ac.uk/hpcgap.php)
-and migrating GAP development to it. As such, 
+and migrating GAP development to it.
 
 
 {% comment %}
