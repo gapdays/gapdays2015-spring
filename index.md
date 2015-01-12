@@ -3,14 +3,18 @@ layout: default
 title: Home
 ---
 
-# First [GAP](http://www.gap-system.org/) Days
-## August 25-29, 2014, RWTH Aachen University
+# Second [GAP](http://www.gap-system.org/) Days
+## March 16-20, 2015, RWTH Aachen University
+
+This meeting will focus on stabilizing, developing and porting existing packages to HPC-GAP.
+
+#### GAP Days in general
 
 [GAP](http://www.gap-system.org/) Days are meetings where developers and users
 with GAP programming experience are invited to influence the future
 development of GAP by initiating and contributing to discussions and coding
 sprints. As enough GAP experts will be around for technical support, the
-meetings also offer good opportunities for people to work on their own
+meetings usually offer good opportunities for people to work on their own
 packages. To streamline each meeting the organizers will usually suggest a few
 main topics to work on during the week.
 
@@ -23,7 +27,7 @@ would be happy to hear about any progress you made.
 
 If you would like to attend, please [register](/registration). This helps us
 with planning the workshop. If you need financial support, please
-register before 1st of August.
+register before 16th of February.
 
 The workshop will take place the RWTH Aachen University. Information about the
 exact location and information about hotels
