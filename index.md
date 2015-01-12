@@ -4,7 +4,7 @@ title: Home
 ---
 
 # Second [GAP](http://www.gap-system.org/) Days
-## March 16-20, 2015, RWTH Aachen University
+## {{ site.description }}, {{ site.location }}
 
 This meeting is a developer's meeting which will focus on stabilizing HPC-GAP.
 Our goal is to work towards a beta-release of HPC-GAP with improved documentation
