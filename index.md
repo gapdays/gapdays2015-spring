@@ -6,7 +6,10 @@ title: Home
 # Second [GAP](http://www.gap-system.org/) Days
 ## March 16-20, 2015, RWTH Aachen University
 
-This meeting will focus on stabilizing, developing and porting existing packages to HPC-GAP.
+This meeting is a developer's meeting which will focus on stabilizing HPC-GAP.
+Our goal is to make a beta-release of HPC-GAP with improved documentation
+which helps package authors to gradually port their packages.
+
 
 #### GAP Days in general
 
