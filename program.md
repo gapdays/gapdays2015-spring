@@ -8,7 +8,7 @@ and migrating GAP development to it.
 
 
 {% comment %}
-* [Schedule and abstracts as PDF](/program.pdf)
+* [Schedule and abstracts as PDF]{{ site.baseurl }}program.pdf)
   * Begin of coding sessions: Monday, March 16, 10:00
   * Welcoming session and first talks: Monday, March 16, 14:00
   * Joint dinner: Wednesday, August 27, 19:00 in the "[Labyrinth](http://www.labyrinthaachen.de)"
