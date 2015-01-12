@@ -9,7 +9,9 @@ title: Home
 This meeting is a developer's meeting which will focus on stabilizing HPC-GAP.
 Our goal is to work towards a beta-release of HPC-GAP with improved documentation
 which helps package authors to gradually port their packages.
-Futhermore we want to work out a roadmap for reintegrating HPC-GAP into the main development line.
+Furthermore we want to work out a roadmap for reintegrating HPC-GAP into the main development line.
+
+{% comment %}
 
 #### GAP Days in general
 
@@ -25,6 +27,8 @@ The meetings are also suitable for advertising recent developments in core GAP
 and packages via short talks. However, the focus of the meeting is on code
 development, with talks only playing a minor role. At the end of the week, we
 would be happy to hear about any progress you made.
+
+{% endcomment %}
 
 ## Registering and stay
 
