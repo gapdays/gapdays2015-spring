@@ -11,7 +11,7 @@ tagline:          'A workshop for GAP developers and users'
 description:      'March 16-20, 2015'
 location:         'RWTH Aachen University'
 url:              http://gapdays.coxeter.de/
-baseurl:          /
+baseurl:          /gapdays2015-spring
 
 
 exclude: [ "program.aux", "program.log", "program.out", "program.tex", "misc" ]
