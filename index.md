@@ -6,7 +6,7 @@ title: Home
 # Second [GAP](http://www.gap-system.org/) Days
 ## {{ site.description }}, {{ site.location }}
 
-This meeting is a developer's meeting which will focus on stabilizing HPC-GAP.
+This meeting is a developers' meeting which will focus on stabilizing HPC-GAP.
 Our goal is to work towards a beta-release of HPC-GAP with improved documentation
 which helps package authors to gradually port their packages.
 Furthermore we want to work out a roadmap for reintegrating HPC-GAP into the main development line.
