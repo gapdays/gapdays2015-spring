@@ -36,7 +36,7 @@ If you would like to attend, please [register]({{ site.baseurl }}/registration).
 with planning the workshop. If you need financial support, please
 register before 16th of February.
 
-The workshop will take place the RWTH Aachen University. Information about the
+The workshop will take place at the RWTH Aachen University. Information about the
 exact location and information about hotels
 can be found on [the location page]({{ site.baseurl }}/location).
 
