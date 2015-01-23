@@ -32,13 +32,13 @@ would be happy to hear about any progress you made.
 
 ## Registering and stay
 
-If you would like to attend, please [register]({{ site.baseurl }}registration). This helps us
+If you would like to attend, please [register]({{ site.baseurl }}/registration). This helps us
 with planning the workshop. If you need financial support, please
 register before 16th of February.
 
 The workshop will take place the RWTH Aachen University. Information about the
 exact location and information about hotels
-can be found on [the location page]({{ site.baseurl }}location).
+can be found on [the location page]({{ site.baseurl }}/location).
 
 ## <a name="contact"></a> Contact
 
