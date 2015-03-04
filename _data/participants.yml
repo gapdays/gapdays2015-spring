@@ -4,13 +4,28 @@
 - name: Reimer Behrends
   affiliation: TU Kaiserslautern
 
-- name: Steve Linton
-  affiliation: University of St Andrews
+- name: Martin Bies
+  affiliation: ITP Heidelberg
+
+- name: Pedro A. García-Sánchez
+  affiliation: Universidad de Granada
+
+- name: Sebastian Gutsche
+  affiliation: RWTH Aachen University
 
 - name: Max Horn
   affiliation: JLU Gießen
 
 - name: Christopher Jefferson
+  affiliation: University of St Andrews
+
+- name: Julius Jonusas
+  affiliation: University of St Andrews
+
+- name: Alexander Konovalov
+  affiliation: University of St Andrews
+
+- name: Steve Linton
   affiliation: University of St Andrews
 
 - name: Frank Lübeck
@@ -19,5 +34,17 @@
 - name: Markus Pfeiffer
   affiliation: University of St Andrews
 
+- name: Alfredo Sánchez-R. Navarro
+  affiliation: Universidad de Cádiz
+
 - name: Hans Schoenemann
   affiliation: TU Kaiserslautern
+
+- name: Andreas Steenpass
+  affiliation: TU Kaiserslautern
+
+- name: Michael Torpey
+  affiliation: University of St Andrews
+
+- name: Wilf Wilson
+  affiliation: University of St Andrews
