@@ -7,7 +7,7 @@ The focus of the GAP Days 2015 will be on [HPC-GAP](http://www-circa.mcs.st-and.
 and migrating GAP development to it.
 
 
-*  [Schedule and abstracts as PDF]({{ site.baseurl }}/program.pdf)
+*  [Schedule as PDF]({{ site.baseurl }}/program.pdf)
   * Begin of coding sessions: Monday, March 16, 10:00
   * Welcoming session and first talks: Monday, March 16, 14:00
   * Joint dinner: Wednesday, March 18, 19:00 in the "[Labyrinth](http://www.labyrinthaachen.de)"
