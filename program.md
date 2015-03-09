@@ -21,7 +21,7 @@ for links to the issue tracker, our discussion on the future of GAP etc.
 
 * We will soon provide instructions for installing a recent HPC-GAP
 version. Please try to get HPC-GAP installed and working on your laptop
-before arriving at the meeting, so that we can get started doing work
+_before_ arriving at the meeting, so that we can get started doing work
 right away.
 
 ## Suggested discussion & coding topics:
