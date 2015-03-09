@@ -7,21 +7,57 @@ The focus of the GAP Days 2015 will be on [HPC-GAP](http://www-circa.mcs.st-and.
 and migrating GAP development to it.
 
 
-{% comment %}
-* [Schedule and abstracts as PDF]{{ site.baseurl }}/program.pdf)
+*  [Schedule and abstracts as PDF]({{ site.baseurl }}/program.pdf)
   * Begin of coding sessions: Monday, March 16, 10:00
   * Welcoming session and first talks: Monday, March 16, 14:00
-  * Joint dinner: Wednesday, August 27, 19:00 in the "[Labyrinth](http://www.labyrinthaachen.de)"
+  * Joint dinner: Wednesday, March 18, 19:00 in the "[Labyrinth](http://www.labyrinthaachen.de)"
   * End: Friday, March 20, 16:00
 
 * For submitting issues (bugs, ideas for enhancements, etc.) in the GAP system, please use the
-[GAP issue tracker at BitBucket](https://bitbucket.org/gap-system/gap/issues).
+[GAP issue tracker at GitHub](https://github.com/gap-system/gap/issues).
 
-* Please also have a look at the [GAP Days 2014 wiki](https://github.com/gap-system/gapdays2014/wiki)
+* Please also have a look at the [GAP Days 2015 wiki](https://github.com/gapdays/gapdays2015-spring/wiki)
 for links to the issue tracker, our discussion on the future of GAP etc.
 
+* We will soon provide instructions for installing a recent HPC-GAP
+version. Please try to get HPC-GAP installed and working on your laptop
+before arriving at the meeting, so that we can get started doing work
+right away.
 
 ## Suggested discussion & coding topics:
+
+The primary goal is to write code and documentation during this week.
+We will have a few short talks, but the rest of the time is reserved
+for code sprints. 
+
+Below is a list of suggested topics. Feel free to contact us and
+suggest additional ones (as long as they fit within the scope of the meeting).
+Please try to think about what might interest you beforehand.
+
+
+1. **Document bootstrapping** procedure to get started with HPC-GAP (get ward, docs etc), at least at the same level like we did for GAP and ensure everyone in the room can build it
+1. **Discuss HPC-GAP TODO list**: What is left to be done, (how) will we reintegrate
+it back with the main GAP, etc.
+1. **Improve GAP Development manual**, in particular the kernel chapter ([source on GitHub](https://github.com/gap-system/gap-distribution/blob/master/doc/dev/kernel.xml)). Correct what's wrong; add new stuff; especially how the rules of HPC-GAP kernel programming change from the GAP ones.
+1. **Fix and cleanup HPC-GAP demos** from the 'demo' directory: combine running demos and checking that they work.
+1. **Polycyclic collectors**: last remaining obstacles to make GAP group-theretical code thread-safe, see [here](http://tracker.gap-system.org/issues/325)
+   <br>(Steve, Max, ...). 
+1. **Get rid of in-place conversions** in the GAP library (one has to really understand the semantics of the code to do this - it can't be done mechanically)
+1. **Refactor benchmarks and tests**
+   <br>(Chris, Alex, ...)
+1. **Discuss package distribution**, calls of LoadPackage in the GAP library etc.
+1. **Cleanup 'dev' directory** (parts may go into the 'gap-distribution' repository).
+1. **[Data structures package](https://bitbucket.org/gap-system/datastructures)**
+   <br>(Markus, Chris, Max, ...)
+1. **Migrate your package(s)** to work with or even benefit from HPC-GAP
+
+
+
+
+
+{% comment %}
+
+
 
 1. Work on a beta release of [HPC-GAP](http://www-circa.mcs.st-and.ac.uk/hpcgap.php)
    * Stabilize the single threaded mode
