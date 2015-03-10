@@ -19,12 +19,11 @@ and migrating GAP development to it.
 * Please also have a look at the [GAP Days 2015 wiki](https://github.com/gapdays/gapdays2015-spring/wiki)
 for links to the issue tracker, our discussion on the future of GAP etc.
 
-* We will soon provide instructions for installing a recent HPC-GAP
-version. Please try to get HPC-GAP installed and working on your laptop
+* Please try to get HPC-GAP installed and working on your laptop
 _before_ arriving at the meeting, so that we can get started doing work
-right away. Please follow [Reimer's build guide](https://github.com/gap-system/gap/wiki/Building-HPC-GAP).
-If you encounter any difficulties please use the above issue tracker
-to report you detailed problem (please include OS version, compiler version, ...).
+right away. To do so, we suggest following [Reimer's build guide](https://github.com/gap-system/gap/wiki/Building-HPC-GAP).
+If you encounter any difficulties, use the [issue tracker](https://github.com/gap-system/gap/issues)
+to report your problem (please include OS version, compiler version, ...).
 
 ## Suggested discussion & coding topics:
 
