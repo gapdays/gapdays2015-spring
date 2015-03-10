@@ -22,7 +22,9 @@ for links to the issue tracker, our discussion on the future of GAP etc.
 * We will soon provide instructions for installing a recent HPC-GAP
 version. Please try to get HPC-GAP installed and working on your laptop
 _before_ arriving at the meeting, so that we can get started doing work
-right away.
+right away. Please follow [Reimer's build guide](https://github.com/gap-system/gap/wiki/Building-HPC-GAP).
+If you encounter any difficulties please use the above issue tracker
+to report you detailed problem (please include OS version, compiler version, ...).
 
 ## Suggested discussion & coding topics:
 
