@@ -23,3 +23,5 @@ To find places, you can consult an online booking site. For example,
  * [Trivago](http://www.trivago.de)
 
 A quite affordable hotel that is also within easy walking distance of the workshop is the [Hotel ibis Styles Hotel Aachen City](http://www.ibis.com/gb/hotel-1703-ibis-styles-hotel-aachen-city/).
+
+In case you are accommodated at the guest house of the university you may want to check this [link](http://www.rwth-aachen.de/cms/root/Die_RWTH/Kontakt_Lageplaene/Raumverwaltung/~bdst/Gaestehaeuser/lidx/1/).
