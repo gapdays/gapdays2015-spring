@@ -22,4 +22,4 @@ To find places, you can consult an online booking site. For example,
  * [HRS](http://www.hrs.de)
  * [Trivago](http://www.trivago.de)
 
-A quite affordable hotel that is also within easy walking distance of the workshop is the [Hotel ibis Styles Hotel Aachen City](http://www.ibis.com/gb/hotel-1703-ibis-styles-hotel-aachen-city/)
+A quite affordable hotel that is also within easy walking distance of the workshop is the [Hotel ibis Styles Hotel Aachen City](http://www.ibis.com/gb/hotel-1703-ibis-styles-hotel-aachen-city/).
