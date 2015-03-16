@@ -6,7 +6,7 @@ title: Location
 The meeting will take place at the RWTH Aachen University, [Lehrstuhl D](http://www.math.rwth-aachen.de/),
 rooms 003, 008 and 103 at [Pontdriesch 14/16](https://maps.google.com/maps?q=Pontdriesch+14,+Aachen,+Germany&hl=en&ll=50.778617,6.080579&spn=0.004993,0.008969&sll=37.0625,-95.677068&sspn=50.777825,73.476563&oq=pontdriesch+14+&hnear=Pontdriesch+14,+Mitte+52062+Aachen,+Germany&t=m&z=17) in 52062 Aachen.
 This is within 20-25 minutes walking distance from the main train station.
-Alternatively, you can take one of the buses from the lines 44, 13A, 13B (exit at "Driescher Gässchen").
+Alternatively, you can take one of the buses from the lines 13B, 44, 74 (exit at "Driescher Gässchen") or the lines 3A, 13A (exit at "Ponttor" ).
 
 You can find the organizers in rooms 104 and 105.
 
