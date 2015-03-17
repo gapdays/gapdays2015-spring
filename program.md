@@ -25,6 +25,9 @@ right away. To do so, we suggest following [Reimer's build guide](https://github
 If you encounter any difficulties, use the [issue tracker](https://github.com/gap-system/gap/issues)
 to report your problem (please include OS version, compiler version, ...).
 
+* We begun work on formulate some questions and plans for the future of HPC-GAP
+in our Wiki,  [please look here](https://github.com/gapdays/gapdays2015-spring/wiki/HPC-GAP-Plans).
+
 ## Suggested discussion & coding topics:
 
 The primary goal is to write code and documentation during this week.
