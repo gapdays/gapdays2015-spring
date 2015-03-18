@@ -24,7 +24,7 @@ _before_ arriving at the meeting, so that we can get started doing work
 right away. To do so, we suggest following [Reimer's build guide](https://github.com/gap-system/gap/wiki/Building-HPC-GAP).
 If you encounter any difficulties, use the [issue tracker](https://github.com/gap-system/gap/issues)
 to report your problem (please include OS version, compiler version, ...).
-Here are all issues that have been created or worked on during [this meeting](https://github.com/gap-system/gap/labels/gapdays2015).
+Here are all issues that have been created or worked on during [this meeting](https://github.com/gap-system/gap/issues?page=1&q=label%3Agapdays2015).
 
 * We begun work on formulate some questions and plans for the future of HPC-GAP
 in our Wiki,  [please look here](https://github.com/gapdays/gapdays2015-spring/wiki/HPC-GAP-Plans).
