@@ -3,6 +3,8 @@ layout: page
 title: Participants
 ---
 
+[![Group photo](/gapdays2015-spring/photos/GAP_Days_2015-spring_photo-thumb.jpg "Group photo")](/gapdays2015-spring/photos/GAP_Days_2015-spring_photo.jpg)
+
 <ol>
 {% for p in site.data.participants %}
   <li>
