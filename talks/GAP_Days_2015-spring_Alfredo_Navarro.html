@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div id="ti2gap-package-for-gap" class="slide section level1">
+<h1><code>4ti2gap</code> package for <code>GAP</code></h1>
+<h2 id="description">Description</h2>
+<p>Another <code>4ti2</code> interface (<code>4ti2Interface</code>)</p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li>Pedro A. García-Sánchez (Univ. de Granada)</li>
+<li>Alfredo Sánchez-R.-Navarro (Univ. de Cádiz)</li>
+</ul>
+<h2 id="status">Status</h2>
+<p>Development and test</p>
+</div>
+<div id="ti2" class="slide section level1">
+<h1>4ti2</h1>
+<p>Provides among other programs:</p>
+<ul>
+<li><code>4ti2[int32, int64, gmp]</code>, pure executable machine code</li>
+<li><p><code>groebner, minimize, markov, ...</code>, wrapper scripts</p></li>
+<li><code>zsolve</code>, pure executable machine code
+<ul>
+<li><code>hilbert, graver, ...</code>, wrapper scripts</li>
+</ul></li>
+</ul>
+</div>
+<div id="ti2gap" class="slide section level1">
+<h1>4ti2gap</h1>
+<h2 id="first-attempt">First attempt:</h2>
+<ul>
+<li><p>Provide an interface <code>groebner</code> by direct dynamic library link</p></li>
+<li><p>Separated architecture precision functions from <code>GMP</code> versions: <code>4ti2gap.so</code> and <code>4ti2gapgmp.so</code></p></li>
+</ul>
+<h2 id="facts">Facts:</h2>
+<ul>
+<li><code>4ti2[int32, int64, gmp]</code> are not based in C++ templates</li>
+<li>Bad behavior when loading more than one dynamic library</li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="structure-of-4ti2gap-i">Structure of 4ti2gap (i)</h2>
+<h3 id="currently">Currently:</h3>
+<ul>
+<li>One dynamic library <code>4ti2gap.so</code></li>
+<li>Interfaces to: <code>groebner</code>, <code>hilbert</code>, <code>graver</code> and <code>zsolve</code></li>
+</ul>
+<h3 id="lib4ti2int32-int64-gmp-groebner">lib4ti2[int32, int64, gmp]: <code>groebner</code></h3>
+<ul>
+<li>Not template based</li>
+<li>Number representation tied-up to <code>GMP</code>, if present and selected.</li>
+</ul>
+<h3 id="libzsolve-hilbert-graver-zsolve">libzsolve: <code>hilbert</code>, <code>graver</code>, <code>zsolve</code></h3>
+<ul>
+<li>No problem: with API interface provided</li>
+</ul>
+</div>
+<div class="slide section level1">
+
+<h2 id="structure-of-4ti2gap-ii">Structure of 4ti2gap (ii)</h2>
+<h3 id="data-conversion">Data conversion</h3>
+<ul>
+<li>Low-level routines are based on <strong>NormalizInterface</strong> package source code</li>
+<li>From <code>GAP</code> to <code>_4ti2_::VectorArray</code> and <code>_4ti2_zsolve_VectorArrayAPI&lt;T&gt;</code> lists/matrices are transformed to string streams</li>
+</ul>
+</div>
+<div id="zsolve4ti2" class="slide section level1">
+<h1>ZSolve4ti2</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="center">zsolve.gi</th>
+<th align="center">4ti2zsolve.cc</th>
+<th align="center">ZSolve.hpp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><code>ZSolve4ti2</code></td>
+<td align="center"><code>_4ti2_zsolve_ZSolve4ti2</code></td>
+<td align="center"><code>_4ti2_zsolve_::ZSolveAPI&lt;T&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Interface access:</p>
+<ul>
+<li><code>create_matrix(std::istream&amp; in, const char* name);</code></li>
+<li><code>set_options(int argc, char** argv);</code></li>
+<li><code>compute();</code></li>
+<li><code>get_matrix(const char* name);</code></li>
+</ul>
+</div>
+<div id="zsolve4ti2-syntax" class="slide section level1">
+<h1>ZSolve4ti2 (syntax)</h1>
+<p><code>ZSolve4ti2(problem);</code></p>
+<blockquote>
+<p><code>problem=[type_mat, gap_matrix1, type_mat2, gap_matrix2, ... ]</code></p>
+</blockquote>
+<p>where</p>
+<blockquote>
+<p><code>type_mat = &quot;mat&quot; | &quot;lat&quot; | &quot;sign&quot; | &quot;rel&quot; | ....</code></p>
+</blockquote>
+</div>
+<div id="zsolve4ti2-example" class="slide section level1">
+<h1>ZSolve4ti2 (example)</h1>
+<p>From 4ti2_manual:</p>
+<p><span class="math">\[
+\begin{array}{rrrrl}
+x &amp; - &amp; y &amp; \leq &amp; 2,\\
+-3x &amp; + &amp; y &amp; \leq &amp; 1,\\
+x &amp; + &amp; y &amp; \geq &amp; 1,\\
+&amp; &amp; y &amp; \geq &amp; 0
+\end{array}
+\]</span></p>
+<pre class="gap"><code>gap&gt; ZSolve4ti2([&quot;mat&quot;,[[1, -1], [-3, 1], [1, 1]],
+  &quot;rel&quot;, [&quot;&lt;&quot;, &quot;&lt;&quot;, &quot;&gt;&quot;],
+  &quot;rhs&quot;, [[2, 1, 1]],
+  &quot;sign&quot;, [0, 1]]);
+
+rec( zhom := [ [ 1, 3 ], [ 1, 1 ], [ 1, 2 ] ],
+  zinhom := [ [ 2, 0 ], [ 0, 1 ], [ 1, 0 ], [ 1, 1 ] ] )</code></pre>
+<p>So the set of solutions of the above system is</p>
+<p><span class="math">\[\{ (2,0),(0,1), (1,0), (1,1)\}   +\langle (1,3),(1,1), (12)\rangle\]</span></p>
+</div>
+<div id="zsolve4ti2-code-example" class="slide section level1">
+<h1>ZSolve4ti2 (code example)</h1>
+<p>Computing the factorizations of <strong>v</strong> in terms of the elements in <strong>l</strong></p>
+<pre class="gap"><code>FactorizationsVectorWRTList_eje:=function(v,l)
+  local  matrix ,mat, rhs, sign, problem, n;
+
+  mat := TransposedMat(Concatenation(l,[-v]));
+  sign := [List(l,_-&gt;1)];
+  rhs := [v];
+  problem := [&quot;mat&quot;,TransposedMat(l),&quot;sign&quot;,sign,&quot;rhs&quot;,rhs];
+  matrix := ZSolve4ti2(problem);
+  return matrix.zinhom;
+end;</code></pre>
+<pre class="gap"><code>gap&gt; FactorizationsVectorWRTList_eje([5,5],[[2,0],[0,2],[1,1]]);
+[ [ 2, 2, 1 ], [ 1, 1, 3 ], [ 0, 0, 5 ] ]</code></pre>
+</div>
+<div id="graverbasis4ti2" class="slide section level1">
+<h1>GraverBasis4ti2</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="center">graver.gi</th>
+<th align="center">4ti2zsolve.cc</th>
+<th align="center">GraverAPI.hpp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><code>GraverBasis4ti2</code></td>
+<td align="center"><code>_4ti2_zsolve_GraverBasis4ti2</code></td>
+<td align="center"><code>_4ti2_zsolve_::GraverAPI&lt;T&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>GraverBasis4ti2(problem);</code></p>
+<pre class="gap"><code>PrimitiveElementsOfAffineSemigroup_eje:=function(s)
+  local l, n, facs, mat, trunc;
+
+  trunc:=function(ls)
+    return List(ls, y-&gt;Maximum(y,0));
+  end;
+
+  l:=GeneratorsOfAffineSemigroup(s);
+  n:=Length(l);
+  mat:=List(TransposedMat(l));
+  facs:=GraverBasis4ti2([&quot;mat&quot;, mat]);
+  facs:=Set(facs,trunc);
+  return Set(facs, f-&gt;f*l);
+end;</code></pre>
+<pre class="gap"><code>gap&gt; a:=AffineSemigroup([[2,0],[0,2],[1,1]]);
+&lt;Affine semigroup in 2 dimensional space, with 3 generators&gt;
+gap&gt; PrimitiveElementsOfAffineSemigroup(a);
+[ [ 2, 2 ] ]</code></pre>
+</div>
+<div id="hilbertbasis4ti2" class="slide section level1">
+<h1>HilbertBasis4ti2</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="center">hilbert.gi</th>
+<th align="center">4ti2zsolve.cc</th>
+<th align="center">HilbertAPI.hpp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><code>HilbertBasis4ti2</code></td>
+<td align="center"><code>_4ti2_zsolve_HilbertBasis4ti2</code></td>
+<td align="center"><code>_4ti2_zsolve_::HilbertAPI&lt;T&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>HibertBasis4ti2(problem);</code></p>
+<p>with similar syntax for <code>problem</code> as ZSolve4ti2 and GraverBasis4ti2</p>
+</div>
+<div id="groebnerbasis4ti2" class="slide section level1">
+<h1>GroebnerBasis4ti2</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="center">groebner.gi</th>
+<th align="center">4ti2groebner.cc</th>
+<th align="center">groebner_main.cpp, GroebnerBasis.h/cpp, ...</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><code>GroebnerBasis4ti2</code></td>
+<td align="center"><code>_4ti2_GroebnerBasis4ti2</code></td>
+<td align="center"><code>_4ti2_::GroebnerBasis</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>GroebnerBasis4ti2(list[,order]);</code></p>
+<p>where</p>
+<blockquote>
+<p><code>order = &quot;lex&quot; | &quot;grlex&quot; | &quot;grvlex&quot;</code></p>
+</blockquote>
+</div>
+<div id="groebnerbasis4ti2-code-example" class="slide section level1">
+<h1>GroebnerBasis4ti2 (code example)</h1>
+<pre class="gap"><code>ParticularSolutionGB:=function(A)
+  local zeroAllSameSign, facs, sol;
+
+  zeroAllSameSign:=function(bin)
+    local rv, prv;
+    rv:=First(bin, x-&gt;x&lt;&gt;0);
+    if rv=fail then  return false; fi;
+    prv:=First([1..Length(bin)],i-&gt;bin[i]=rv);
+    if rv=Length(bin) then return true; fi;
+    return First(bin{[prv+1 .. Length(bin)]}, x-&gt;x *  rv&lt;0)=fail;
+  end;
+
+  facs:=GroebnerBasis4ti2(A);
+  if Length(facs)&gt;0 then
+    sol:=First(facs, b-&gt;zeroAllSameSign(b));
+    if sol&lt;&gt;fail then return sol; fi;
+  fi;
+  return [];
+end;</code></pre>
+<pre class="gap"><code>gap&gt; ParticularSolutionGB([[10, 2, -7, 2191],[-4, 280, 1, 7]]);
+[ 109, 1, 156, 0 ]</code></pre>
+</div>
+<div id="thank-you-for-your-attention" class="slide section level1">
+<h1>Thank you for your attention</h1>
+</div>
+</body>
+</html>
