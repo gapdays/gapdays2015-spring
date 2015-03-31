@@ -57,8 +57,10 @@ it back with the main GAP, etc.
 1. **Migrate your package(s)** to work with or even benefit from HPC-GAP
 
 
+## Visualization of commit activity:
 
-
+1. [Master branch of GAP GitHub repository during the 2nd GAP Days](https://www.youtube.com/watch?v=af2S79Az_wI)
+1. [HPC-GAP branch of GAP GitHub repository during the 2nd GAP Days](https://www.youtube.com/watch?v=h4ZSvz_wXD0)
 
 {% comment %}
 
