@@ -59,7 +59,7 @@ it back with the main GAP, etc.
 
 ## Visualization of commit activity:
 
-1. [Master branch of GAP GitHub repository during the 2nd GAP Days](https://www.youtube.com/watch?v=af2S79Az_wI)
+1. [Master branch of GAP GitHub repository during the 2nd GAP Days](https://www.youtube.com/watch?v=kXxAeYGLSdY)
 1. [HPC-GAP branch of GAP GitHub repository during the 2nd GAP Days](https://www.youtube.com/watch?v=h4ZSvz_wXD0)
 
 {% comment %}
