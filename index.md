@@ -53,3 +53,12 @@ If you have questions or suggestions, please contact the organizers:
 
 This workshop is supported by the
 [DFG Priority Project SPP 1489 "Algorithmic and Experimental Methods](http://www.computeralgebra.de/), the [DFG Graduiertenkolleg "Experimentelle und konstruktive Algebra"](http://www.math.rwth-aachen.de/~Graduiertenkolleg/) at RWTH Aachen University, and the [University of St Andrews](http://www.st-andrews.ac.uk).
+
+## Previous GAP Days
+
+<ol>
+  <li>
+    <strong></strong>
+    <a href="http://gapdays2014.coxeter.de/">First GAP Days</a>
+  </li>
+</ol>
