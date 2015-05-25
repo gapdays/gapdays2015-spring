@@ -57,6 +57,10 @@ it back with the main GAP, etc.
 1. **Migrate your package(s)** to work with or even benefit from HPC-GAP
 
 
+## Todo-list for HPC-GAP
+
+During the meeting we agreed on the following [todo-list for HPC-GAP (aka GAP5)](https://trello.com/b/VfbOtaEC/gap-5).
+
 ## Visualization of commit activity:
 
 1. [Master branch of GAP GitHub repository during the 2nd GAP Days](https://www.youtube.com/watch?v=kXxAeYGLSdY)
