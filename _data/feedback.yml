@@ -1,0 +1,21 @@
+- name: Pedro A. García-Sánchez
+  package: numericalsgps
+  feedback: As in the last summer I had the chance to talk directly to the developers and maintainers, not only of gap itself, but of many packages we use. I had also the oportunity of testing our packages in hpc-gap and started implementing parallel versions of the algorithms. The parallelization is being hard so far if using external libraries (Reimer said this could be probably improved by using locks). One of the many good thing of these meetings is precisely this; while you are implementing and testing, bugs arise, and the other participants solve many of them on the fly. With the parallel versions of our algorithms we got several improvements, sometimes of a factor of six (for instance in the computation of tame degrees of block monoids; on an i7). I am really grateful to all the participants for their help and patience.
+
+- name: Alfredo Sánchez-R. Navarro
+  package: 4ti2gap
+  feedback: As a new comer to GAP in the context of package development (4ti2gap), I have been able to ask for the solutions to problems related to the specific insight of experienced people. Specifically, from the test applied to numericalsgps with 4ti2gap, I have been able to resolve to concrete bugs of data conversion. Also, by these means, I have been able to prepare the build process of the package to HPC-GAP. Besides testing the package in HPC-GAP, has exposed its limitations and those of the third party libraries. Which I hope we could overcome in the future. I want to thank also those who have given us the benefit of their help and kind attention.
+
+- name: Hans Schönemann
+  feedback: Adapted libsing/libsingular to Singular 4-0-2. Discussed the use of libsing within HPC-GAPs (possible, but only within one thread at a time as Singular is (currently) not threadsafe). Discussed the use of a (future) parallel Singular in HPC-GAP. Got some ideas about tools for code covarage/debugging/profiling.
+
+- name: Andreas Steenpaß
+  feedback: Lots of discussions on how to rebuild Singular's parallel interface on Reimer's new low-level parallel framework for Singular which uses threads. The layout will be similar and thus compatible to HPC GAP. Worked on connecting homalg to Singular's current parallel framework.  First examples are now working. We will have to change the interface only a very little bit once we can use Reimer's stuff (see above).
+
+- name: Michael Torpey
+  package: Semigroups
+  feedback: I learned a lot about how parallelisation works in the upcoming HPC-GAP, and I began work on making the Semigroups package thread-safe.  I also learned how to use Git and Valgrind, and spent most of the rest of my time finding and fixing bugs in the GAP source code related to semigroups.
+
+- name: Wilfred Wilson
+  package: Semigroups
+  feedback: It was very rewarding to meet many of the people who develop GAP and its packages. I listened to and took part in many discussions, from which I learned about how GAP is developed and how to contribute myself. Testing the Semigroups package in HPC-GAP revealed issues in both the package and GAP, which are now resolved. This was aided by Chris's new code-coverage tool with which I improved test coverage in the Semigroups package. I had been largely unfamiliar with parallel programming, however after GAP Days I now feel well-placed to help the Semigroups package take advantage of HPC-GAP in the future.
